@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Sample CRUD Firebase Javascript - 01 Read Data</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ <h1>Firebase CRUD with Vanilla Javascript<br/><small><em>01 Read Data</em></small></h1>
+ 
+ <ul id="userList"></ul>
+
+<div id="userDetail">
+ <p >Name :<strong class="detailName"></strong></p>
+ <p >Age: <strong class="detailAge"></strong></p>
+ <p >Email: <strong class="detailEmail"></strong></p>
+ </div>
+ 
+ <!-- firebase sdk link goes here -->
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDFxNSu5Yx_RHIz8y98trjFtIBnHMJDDiY",
+    authDomain: "bulletinboard-b4071.firebaseapp.com",
+    databaseURL: "https://bulletinboard-b4071.firebaseio.com",
+    projectId: "bulletinboard-b4071",
+    storageBucket: "bulletinboard-b4071.appspot.com",
+    messagingSenderId: "810076479956"
+  };
+  firebase.initializeApp(config);
+</script>
+
+ 
+ <script type="text/javascript" src="app.js"></script>
+ </body>
+
+</html>
